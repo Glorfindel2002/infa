@@ -1,1 +1,83 @@
 # infa
+Задача 1
+#include <iostream>
+#include <iomanip>
+
+int main() {
+    std::string name;
+    int price, temperature;
+    bool hasCashback;
+    std::cout << "Product's name: ";
+    std::cin >> name;
+    std::cout << "Product's price: ";
+    std::cin >> price;
+    std::cout << "Is cash-back available for this product? (true/false) ";
+    std::cin >> std::boolalpha >>  hasCashback;
+    std::cout << "Maximum storing temperature: ";
+    std::cin >> temperature;
+
+
+    std::cout << '\n' << " OUTPUT *" << "\n\n";
+
+    std::cout << name << '\n';
+    std::cout <<"price:..........." <<std::hex<<std::uppercase<<std::setfill('0') <<std::setw(8)<< price << '\n';
+    std::cout <<"Has cash-back:"<<std::setfill('.') <<std::setw(11)<<std::boolalpha<< hasCashback << '\n';
+    std::cout <<"Max temperature:"<<std::dec<<std::setfill('.') <<std::setw(9)<<std::showpos<< temperature << '\n';
+
+    // Input your code here..
+
+    return 0;
+}
+
+
+Задача 2
+#include <iostream>
+#include <iomanip>
+#define c 29979245800
+int main() {
+    double x;
+    std::cin >> x;
+    std::cout << x0.0000000001c*c;
+
+    return 0;
+}
+
+
+
+Задача3
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    float a, b, c;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+    float dic;
+    dic = pow(b, 2) - 4ac;
+
+    if (dic < 0)
+    {
+        cout << "Resheniya net" << endl;
+    }
+    else if (dic == 0)
+    {
+        cout << -b/(2a);
+    }
+    else
+    {
+        cout << (-b-sqrt(dic))/(2a) << endl;
+        cout << (-b+sqrt(dic))/(2*a) << endl;
+    }
+}
+
+Задача 4
+
+intx = 5;
+inty =9;
+x = x+y
+y = x-y
+x = x-y
+cout << x << ' '<<y;
