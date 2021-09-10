@@ -1,0 +1,29 @@
+# infa
+
+Задача 2
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#define c 29979245800
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    double x,y,z;
+    std::cout <<"Давление в системе СИ (Па) ";
+    std::cin >> x;
+    
+    
+    std::cout <<"Электрический заряд в системе СИ (Кл) ";
+    std::cin >> y;
+    
+    std::cout <<"Магнитный поток в системе СИ (Вб) ";
+    std::cin >> z;
+    
+    std::cout <<"Давление в системе СГСЕ "<< x*0.1<<std::endl;
+    std::cout <<"Электричиский заряд в системе СГСЕ "<< y*3*pow(10,9)<< std::endl;
+    std::cout <<"Магнитный поток в системе СГСЕ "<< z*pow(10,-8)*c<<std::endl;
+    
+}
+
+
+
